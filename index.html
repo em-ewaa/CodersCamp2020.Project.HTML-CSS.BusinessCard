@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 
 <head>
     <!-- Required meta tags -->
@@ -8,11 +8,159 @@
     <title>CodersCamp | Projekt 1 - HTML i CSS</title>
     <meta name="description" content="CodersCamp to darmowy, otwarty kurs programowania webowego we Wrocławiu. Sprawdź, czego nauczysz się na CodersCamp i spróbuj swoich sił w branży IT!">
 
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/fontello.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+<!-- <div class="test"></div> -->
+    <header>
+        <div class="nav">
+            <p class="logo">
+                EM
+            </p>
+            <ul class="menu">
+                <li>ABOUT ME</li>
+                <li>EXPERIENCE</li>
+                <li>LIFE</li>
+                <li>CONTACT</li>
+            </ul>
+        </div>
+        <!-- <img class="header-photo" src="./img/header.jpg" alt=""> -->
+        <div class="name-title">
+            <P>EWA MAJOWSKA
+                <br>
+                WEB DEVELOPER
+            </P>
+        </div>
+        <i class="icon-down-open-big"></i>
+        <i class="icon-down-open-big"></i>
+    </header>
 
-<p>CodersCamp - projekt 1. Tutaj możesz zacząć swoją zabawę!</p>
+    <!-- About me  -->
 
+    <section class="about-me">
+        <h1 class="section-header">About me</h1>
+        <div class="container-about">
+            <div class="photo-face">
+
+            </div>
+            <p class="data">
+                Name: Ewa Majowska
+                <br>
+                Age: 25
+                <br>
+                Languages: Polish, English, French, Japanese
+                <br>
+                Based in Réunion Island
+            </p>
+            <div class="hi-there">
+                <h2>Hi there!</h2>
+                <p>Thank you for visiting my website! I’m Ewa and I was born in Rybnik, Poland. After I graduaded in English Philology I’ve decided to try different paths in my life and currently this is where I am: in-between yoga sessions creating webpages for people like you!  If you would like to know a bit more about me, just follow along!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience  -->
+
+    <section class="experience">
+        <h1 class="section-header">Experience</h1>
+        <div class="container">
+            <p class="experience-text">
+                In 2015 I graduated a technical school acquiring hotelier skills. During that time I have learnt the true value in hosting guests by taking every effort to make their stay pleasant, as well as show cordiality and warmth on each step during employee-guest interaction.
+                <br>
+                In 2018 I earned a BA degree in English Philology (translation with Japanese), at Silesian University in Katowice. Those two steps in my CV shed a light on my interests, which are travelling and language learning. I find a lot of joy in comparing languages together, which leads me to the current step in my CV, which is programming.
+                <br>
+                What else is programming, than learning the language of machines? I believe that is why I decided to pursue this career and do nothing else than learn another bunch of words and sentences! Consequently I am glad to have taken up Coders Camp course and I am looking forward to discover more!
+            </p>
+            <div class="experience-logo">
+                <icon1>
+
+                </icon1>
+                <icon2>
+
+                </icon2>
+            </div>
+        </div>
+        <div class="icons-3">
+            <icon1>
+
+            </icon1>
+            <icon2>
+
+            </icon2>
+            <icon3>
+
+            </icon3>
+        </div>
+    </section>
+
+    <!-- Life -->
+
+    <section class="life">
+        <h1 class="section-header">Life</h1>
+        <div class="feathers">
+
+        </div>
+
+        <!-- Reunion  -->
+
+        <div class="container-reunion">
+            <h1 class="banner">Réunion</h1>
+            <p class="reunion-text">Réunion is a small tropical island situated on the vast waters of Indian Ocean. It happens to be an overseas department of France and also my current place of residence. If it’s the first time that you heard of this place, I definitely encourage you to flip throught the photos. It’s a marvelous region full of unexplored gems!</p>
+            <div class="gallery">
+
+            </div>
+        </div>
+        
+        <!-- Travel  -->
+        
+        <div class="container-travel">
+            <h1 class="banner">Travel</h1>
+            <p class="travel-text">My life revolves around languages, the learning of which consequently provides a good chunk of its culture, as well as history. It simply couldn’t bring any other effect than my yearn for travel. For this very reason I decided to live abroad and devote some time to discover Southeast Asia and Oceania.</p>
+            <div class="travel-gallery">
+
+            </div>
+        </div>
+
+        <!-- Yoga  -->
+
+        <div class="container-yoga">
+            <h1 class="banner">Yoga</h1>
+
+            <img src="" alt="">
+
+            <p class="yoga-text">During my trips I had to find a way to stay in shape. Besides hiking and scuba-diving, yoga appeared to be a good fit for my lifestyle. Few months later into the practice, my wish-list of asanas that I want to learn stretched enourmously. It’s going to be a long and stimulating journey!</p>
+            <div class="feathers">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact  -->
+
+    <footer class="contact">
+        <h1 class="section-header">Let's stay in touch!</h1>
+        <div class="social-media">
+            <icon1></icon1>
+            <icon2></icon2>
+            <icon3></icon3>
+            <icon4></icon4>
+        </div>
+        <div class="contact-form">
+            <form action="">
+                <!-- <label for="name">Name</label> -->
+                <input type="text" name="name" placeholder="Name"><br>
+                <!-- <label for="email">Email</label> -->
+                <input type="email" name="email" placeholder="Email"><br>
+                <!-- <label for="message">Message</label> -->
+                <input type="textfield" name="message" placeholder="Message">
+                <input type="submit" value="Send" class="send-button">
+            </form>
+        </div>
+    </footer>
 </body>
 </html>
