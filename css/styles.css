@@ -1,0 +1,254 @@
+:root {
+    --nice-grey: #C4C4C4;
+    --border-line: 1px solid rgba(255, 255, 255, 0.8);
+    --border-radius25: 25px;
+    --border-radius15: 0 15px 15px 0;
+    --linear-bg: linear-gradient(180deg, rgba(255, 235, 224, 0.1) 0%, rgb(255, 255, 255, 0.5) 100%);
+    --banner-color: rgba(255, 255, 255, 55%);
+    --header-font-color: #686868;
+    --margin-inside: 20px 30px;
+    font-size: 10px;
+    color: #404040;
+    text-align: justify;
+}
+
+/* .test {
+    height: 50px;
+    width: 25%;
+    background-color: black;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    border-bottom: var(--border-line);
+
+} */
+/* * {
+    border: red solid 1px;
+} */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--nice-grey);
+    font-family: 'Poppins', Roboto;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+header {
+    height: calc(100vh - 50px);
+    width: 100%;
+    background: url("../img/header.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    position: relative;
+    margin-top: 50px;
+}
+
+.nav {
+    display: flex;
+    background-color: var(--nice-grey);
+    height: 50px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: var(--border-line);
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+
+}
+
+.logo {
+    padding: 0 20px;
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+    font-weight: 500;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 0.3rem;
+}
+
+li {
+    max-width: 150px;
+    padding: 15px;
+    text-align: center;
+}
+
+.name {
+    position: absolute;
+    right: 2.5rem;
+    bottom: 4rem;
+    text-align: right;
+    line-height: 2.8rem;
+    font-size: 4.8rem;
+    font-weight: 100;
+    letter-spacing: 0.4rem;
+}
+
+.title {
+    font-size: 2.4rem;
+    font-weight: 800;
+    letter-spacing: 0.7rem;
+}
+
+.icon-down-open-big {
+    position: absolute;
+    font-size: 7rem;
+    bottom: -3.5rem;
+    left: 50%;
+    transform: scaleX(1.2);
+    transform: scaleY(0.6);
+}
+.a1 {
+    bottom: -2rem;
+    animation: blink 2s ease-in-out 5300ms 2;
+}
+.a2 {
+    animation: blink 2s ease-in-out 5000ms 2;
+}
+@keyframes blink {
+0% {opacity: 1;}
+50% {opacity: 0;}
+100% {opacity: 1;}
+}
+
+/* Body  */
+
+.position-relative {
+    position: relative;
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+.padding {
+    padding: 20px 40px;
+}
+.padding-p {
+    padding: 30px 50px;
+    margin-top: 75px;
+}
+.margintop50 {
+    margin-top: 50px;
+}
+
+/* .margins-inside {
+    margin: 75px 60px 35px 60px;
+} */
+
+.section {
+    background-image: var(--linear-bg);
+    border: var(--border-line);
+    border-radius: var(--border-radius25);
+    width: 80%; 
+}
+
+.section-header {
+    background-color: rgba(255, 255, 255, 0.55);
+    border-radius: var(--border-radius15);
+    display: inline-block;
+    padding: 3px 30px;
+    color: var(--header-font-color);
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+    margin-top: 30px;
+    position: absolute;
+    top: 0px;
+}
+
+
+/* About-me  */
+.container {
+    display: flex;
+    align-items: center;
+}
+.photo-face {
+    height: auto;
+    max-width: 175px;
+    border-radius: 100%;
+    border: var(--border-line);
+}
+
+.f-item.data {
+    flex: 1;
+    text-align: left;
+}
+.f-item.hi-there {
+    flex: 2;
+}
+
+
+/* Experience  */
+.experience {
+    width: 80%;
+    border-radius: 0 25px 25px 0;
+    display: flex;
+}
+.s2 p {
+    margin-top: 100px;
+}
+.icons-2 {
+    margin-right: 50px;
+    justify-content: space-between;
+}
+
+.icons-3 {
+    /* min-height: 400px; */
+    align-self: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.icons-3 > * {
+    width: 120px;
+    align-self: center;
+}
+
+
+/* Reunion  */
+.s3 {
+    margin-top: 90px;
+    width: 75%;
+    min-height: 480px;
+    /* display: flex; */
+
+}
+.s3 p {
+    box-sizing: border-box;
+    min-width: 360px;
+}
+.s3 img {
+    max-height: 330px;
+    border-radius: 15px 15px 15px 15px;
+    margin: 75px 50px 25px 0px;
+}
+
+/* Yoga */
+
+.s6 {
+    max-width: 800px;
+    display: flex;
+}
+.s6 img {
+    border-radius: 15px 15px 15px 15px;
+    margin: 75px 0px 25px 50px;
+
+}
+.s6 p {
+    align-self: center;
+}
