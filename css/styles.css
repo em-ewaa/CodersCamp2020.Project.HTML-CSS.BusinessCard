@@ -1,12 +1,15 @@
 :root {
     --nice-grey: #C4C4C4;
-    --font-color: #404040;
     --border-line: 1px solid rgba(255, 255, 255, 0.8);
-    --border-radius: 25px;
-    --linear-bg: linear-gradient(180deg, rgba(255, 235, 224, 0) 0%, rgb(255, 255, 255, 0.5) 100%);
+    --border-radius25: 25px;
+    --border-radius15: 0 15px 15px 0;
+    --linear-bg: linear-gradient(180deg, rgba(255, 235, 224, 0.1) 0%, rgb(255, 255, 255, 0.5) 100%);
     --banner-color: rgba(255, 255, 255, 55%);
-    --banner-font-color: #686868;
+    --header-font-color: #686868;
+    --margin-inside: 20px 30px;
     font-size: 10px;
+    color: #404040;
+    text-align: justify;
 }
 
 /* .test {
@@ -19,9 +22,9 @@
     border-bottom: var(--border-line);
 
 } */
-* {
+/* * {
     border: red solid 1px;
-}
+} */
 body {
     margin: 0;
     padding: 0;
@@ -43,7 +46,8 @@ header {
     background-position: center;
     background-size: cover;
     color: white;
-    position: relative;margin-top: 50px;
+    position: relative;
+    margin-top: 50px;
 }
 
 .nav {
@@ -120,8 +124,131 @@ li {
 100% {opacity: 1;}
 }
 
-h1 {
+/* Body  */
+
+.position-relative {
+    position: relative;
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+.padding {
+    padding: 20px 40px;
+}
+.padding-p {
+    padding: 30px 50px;
+    margin-top: 75px;
+}
+.margintop50 {
+    margin-top: 50px;
+}
+
+/* .margins-inside {
+    margin: 75px 60px 35px 60px;
+} */
+
+.section {
+    background-image: var(--linear-bg);
+    border: var(--border-line);
+    border-radius: var(--border-radius25);
+    width: 80%; 
+}
+
+.section-header {
+    background-color: rgba(255, 255, 255, 0.55);
+    border-radius: var(--border-radius15);
+    display: inline-block;
+    padding: 3px 30px;
+    color: var(--header-font-color);
+    font-weight: 700;
     font-size: 2.5rem;
-    letter-spacing: 0.3rem;
-    font-weight: 300;
+    letter-spacing: 0.2rem;
+    margin-top: 30px;
+    position: absolute;
+    top: 0px;
+}
+
+
+/* About-me  */
+.container {
+    display: flex;
+    align-items: center;
+}
+.photo-face {
+    height: auto;
+    max-width: 175px;
+    border-radius: 100%;
+    border: var(--border-line);
+}
+
+.f-item.data {
+    flex: 1;
+    text-align: left;
+}
+.f-item.hi-there {
+    flex: 2;
+}
+
+
+/* Experience  */
+.experience {
+    width: 80%;
+    border-radius: 0 25px 25px 0;
+    display: flex;
+}
+.s2 p {
+    margin-top: 100px;
+}
+.icons-2 {
+    margin-right: 50px;
+    justify-content: space-between;
+}
+
+.icons-3 {
+    /* min-height: 400px; */
+    align-self: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.icons-3 > * {
+    width: 120px;
+    align-self: center;
+}
+
+
+/* Reunion  */
+.s3 {
+    margin-top: 90px;
+    width: 75%;
+    min-height: 480px;
+    /* display: flex; */
+
+}
+.s3 p {
+    box-sizing: border-box;
+    min-width: 360px;
+}
+.s3 img {
+    max-height: 330px;
+    border-radius: 15px 15px 15px 15px;
+    margin: 75px 50px 25px 0px;
+}
+
+/* Yoga */
+
+.s6 {
+    max-width: 800px;
+    display: flex;
+}
+.s6 img {
+    border-radius: 15px 15px 15px 15px;
+    margin: 75px 0px 25px 50px;
+
+}
+.s6 p {
+    align-self: center;
 }
