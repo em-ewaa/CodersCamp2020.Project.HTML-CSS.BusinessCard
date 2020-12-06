@@ -85,6 +85,12 @@ li {
     padding: 15px;
     text-align: center;
 }
+ul > .sep-line {
+    width: 1px;
+    height: 30px;
+    background-color: white;
+    margin: 0px 0px; 
+}
 
 .name {
     position: absolute;
@@ -135,31 +141,31 @@ li {
     margin-right: auto;
 }
 .padding {
-    padding: 20px 40px;
+    padding: 25px 25px;
 }
+
+/*
 .padding-p {
     padding: 30px 50px;
     margin-top: 75px;
 }
+*/
 .margintop50 {
     margin-top: 50px;
-}
-
-/* .margins-inside {
-    margin: 75px 60px 35px 60px;
-} */
+} 
 
 .section {
     background-image: var(--linear-bg);
     border: var(--border-line);
     border-radius: var(--border-radius25);
-    width: 80%; 
+    width: 80%;
+    padding: 50px 25px 10px 25px;
+    box-sizing: border-box;
 }
 
 .section-header {
     background-color: rgba(255, 255, 255, 0.55);
     border-radius: var(--border-radius15);
-    display: inline-block;
     padding: 3px 30px;
     color: var(--header-font-color);
     font-weight: 700;
@@ -168,13 +174,44 @@ li {
     margin-top: 30px;
     position: absolute;
     top: 0px;
+    left: 0px;
+    z-index: 2;
 }
 
-
-/* About-me  */
+.sub-header {
+    border: 1px solid #40404080;
+    border-radius: 15px;
+    padding: 3px 30px;
+    font-weight: 300;
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    
+}
 .container {
+    
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+section > img {
+    margin: 25px;
+    box-sizing: border-box;
+    border-radius: 15px 15px 15px 15px;
+}
+
+/* About-me  */
+.s1 {
+    padding: 10px 30px;
+}
+.sep-line {
+    width: 1px;
+    height: 230px;
+    background-color: white;
+    margin: 0px 30px; 
 }
 .photo-face {
     height: auto;
@@ -198,14 +235,17 @@ li {
     border-radius: 0 25px 25px 0;
     display: flex;
 }
-.s2 p {
-    margin-top: 100px;
-}
 .icons-2 {
-    margin-right: 50px;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 325px;
 }
 
+.icons-2 > img {
+    width: 152px;
+    height: auto;
+}
 .icons-3 {
     /* min-height: 400px; */
     align-self: center;
@@ -221,34 +261,125 @@ li {
 
 
 /* Reunion  */
+
+.life-header {
+    top: -90px;
+}
 .s3 {
-    margin-top: 90px;
     width: 75%;
-    min-height: 480px;
-    /* display: flex; */
+    margin-top: 90px;
 
 }
 .s3 p {
     box-sizing: border-box;
-    min-width: 360px;
 }
 .s3 img {
-    max-height: 330px;
-    border-radius: 15px 15px 15px 15px;
-    margin: 75px 50px 25px 0px;
+    max-height: 300px;
 }
 
 /* Yoga */
 
-.s6 {
+.s5 {
     max-width: 800px;
-    display: flex;
 }
-.s6 img {
-    border-radius: 15px 15px 15px 15px;
-    margin: 75px 0px 25px 50px;
 
+.s5 .sub-header {
+    right: 50px;
+    left: auto;
+    width: fit-content;
 }
-.s6 p {
+
+.s5 p {
     align-self: center;
+}
+
+
+/* Footer  */
+footer {
+    height: 250px;
+    /* background-image: url(/CodersCamp2020.Project.HTML-CSS.BusinessCard/img/footer.jpeg);
+    background-size: cover;
+    background-position-y: center;
+    filter: opacity(0.8); */
+    border-radius: 10px 10px 0 0;
+    border-top: var(--border-line);
+    overflow: hidden;
+    background-color: #fff;
+}
+ footer > img {
+    object-fit: contain;
+    width: 100vw;
+    /* transform: translateY(10px); */
+    opacity: 0.8;
+ }
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+    z-index: 1;
+    position: absolute;
+    top: 70px;
+}
+.social-media > i[class^="icon-"] {
+    font-size: 3rem;
+    color: #ffffff;
+    border-radius: 100%;
+    border: var(--border-line);
+    margin: 15px;
+    padding: 2px;
+}
+form{
+    position: absolute;
+    z-index: 1;
+    right: 25px;
+    top: 30px;
+    width: 40%;
+    height: 220px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 1fr 4fr;
+    grid-template-areas:    "name email"
+                            "message message";
+    grid-gap: 5px;
+}
+
+.form-name {
+    grid-area: name;
+    background-color: rgba(255, 255, 255, 0.70);
+}
+.form-email {
+    grid-area: email;
+    background-color: rgba(255, 255, 255, 0.70);
+}
+.form-message {
+    grid-area: message;
+    background-color: rgba(255, 255, 255, 0.70);
+}
+
+.form-template {
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    background-color: rgba(255, 255, 255, 0.70);
+    padding-left: 20px;
+    border-radius: 10px;
+    border: none;
+}
+input[type=textfield]::-webkit-input-placeholder {
+    position: relative;
+    bottom: 50px;
+}
+input[type=submit] {
+    position: absolute;
+    z-index: 2;
+    padding: 5px 20px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    border-radius: 8px;
+    color: white;
+    background-color: #c9a2b5;
+    right: 10px;
+    bottom: 40px;
+    border: none;
 }
