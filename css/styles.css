@@ -91,7 +91,10 @@ ul > .sep-line {
     background-color: white;
     margin: 0px 0px; 
 }
-
+ul a:hover{
+    background-color: rgb(255, 255, 255, 0.5);
+    transition: all 0.4s ease-in-out;
+}
 .name {
     position: absolute;
     right: 2.5rem;
@@ -112,13 +115,14 @@ ul > .sep-line {
 .icon-down-open-big {
     position: absolute;
     font-size: 7rem;
-    bottom: -3.5rem;
+    bottom: -2.5rem;
     left: 50%;
     transform: scaleX(1.2);
     transform: scaleY(0.6);
 }
+
 .a1 {
-    bottom: -2rem;
+    bottom: -1rem;
     animation: blink 2s ease-in-out 5300ms 2;
 }
 .a2 {
@@ -144,12 +148,6 @@ ul > .sep-line {
     padding: 25px 25px;
 }
 
-/*
-.padding-p {
-    padding: 30px 50px;
-    margin-top: 75px;
-}
-*/
 .margintop50 {
     margin-top: 50px;
 } 
@@ -169,7 +167,7 @@ ul > .sep-line {
     padding: 3px 30px;
     color: var(--header-font-color);
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     letter-spacing: 0.2rem;
     margin-top: 30px;
     position: absolute;
@@ -183,7 +181,7 @@ ul > .sep-line {
     border-radius: 15px;
     padding: 3px 30px;
     font-weight: 300;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     letter-spacing: 0.2rem;
     position: absolute;
     top: 0px;
@@ -247,7 +245,6 @@ section > img {
     height: auto;
 }
 .icons-3 {
-    /* min-height: 400px; */
     align-self: center;
     flex: 1;
     display: flex;
@@ -297,10 +294,7 @@ section > img {
 /* Footer  */
 footer {
     height: 250px;
-    /* background-image: url(/CodersCamp2020.Project.HTML-CSS.BusinessCard/img/footer.jpeg);
-    background-size: cover;
-    background-position-y: center;
-    filter: opacity(0.8); */
+    filter: opacity(0.8);
     border-radius: 10px 10px 0 0;
     border-top: var(--border-line);
     overflow: hidden;
@@ -312,6 +306,8 @@ footer {
     /* transform: translateY(10px); */
     opacity: 0.8;
  }
+
+
 .social-media {
     display: flex;
     justify-content: space-around;
@@ -320,20 +316,26 @@ footer {
     position: absolute;
     top: 70px;
 }
-.social-media > i[class^="icon-"] {
-    font-size: 3rem;
+.social-media i[class^="icon-"] {
+    font-size: 2rem;
     color: #ffffff;
-    border-radius: 100%;
+    border-radius: 50%;
     border: var(--border-line);
     margin: 15px;
-    padding: 2px;
+    padding: 2px;    
 }
-form{
+.social-media i:hover {
+    background-color: white;
+    color: #404040;
+    transition: all 0.4s ease-in-out;
+}
+
+form {
     position: absolute;
     z-index: 1;
     right: 25px;
     top: 30px;
-    width: 40%;
+    width: 55%;
     height: 220px;
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -361,15 +363,26 @@ form{
     font-weight: 300;
     letter-spacing: 0.2em;
     background-color: rgba(255, 255, 255, 0.70);
-    padding-left: 20px;
+    padding-left: 10px;
     border-radius: 10px;
     border: none;
 }
+
+input:focus {
+    box-shadow: 1 1 2px blue;
+    outline: none;
+    letter-spacing: 2px;
+
+  }
 input[type=textfield]::-webkit-input-placeholder {
     position: relative;
     bottom: 50px;
 }
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
 input[type=submit] {
+    cursor: pointer;
     position: absolute;
     z-index: 2;
     padding: 5px 20px;
@@ -378,8 +391,15 @@ input[type=submit] {
     letter-spacing: 0.2em;
     border-radius: 8px;
     color: white;
-    background-color: #c9a2b5;
+    background-color: #755a;
     right: 10px;
     bottom: 40px;
     border: none;
+    
+}
+
+input[type=submit]:hover {
+    background-color: #b1879b67;
+    color: #404040;
+    transition: all 0.2s ease-in-out;
 }

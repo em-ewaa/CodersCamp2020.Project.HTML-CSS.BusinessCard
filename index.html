@@ -23,30 +23,30 @@
                 EM
             </a></p>
             <ul class="menu">
-                <li> <a href="#">ABOUT ME</a></li>
+                <li> <a href="#about-me">ABOUT ME</a></li>
                 <div class="sep-line"></div>
-                <li> <a href="#">EXPERIENCE</a></li>
+                <li> <a href="#experience">EXPERIENCE</a></li>
                 <div class="sep-line"></div>
-                <li> <a href="#">LIFE</a></li>
+                <li> <a href="#life">LIFE</a></li>
                 <div class="sep-line"></div>
-                <li> <a href="#">CONTACT</a></li>
+                <li> <a href="#contact">CONTACT</a></li>
             </ul>
         </div>
         
-        <P class="name">EWA MAJOWSKA
+        <p class="name">EWA MAJOWSKA
             <br>
         <span class="title">WEB DEVELOPER</span>
-        </P>
-        <!-- <div class="arrows"> -->
+        </p>
+        <a href="#about-me">
             <i class="icon-down-open-big a2"></i>
             <i class="icon-down-open-big a1"></i>
-        <!-- </div> -->
+        </a>
     </header>
 
     <!-- About me  -->
 
     <section class="section s1 centered margintop50 position-relative">
-        <h1 class="section-header">About me</h1>
+        <h2 id="about-me" class="section-header">About me</h2>
         <div class="container">
             <img src="img/my-face.jpg" class="photo-face" alt="It's a photo of me">
             <div class="sep-line"></div>
@@ -70,7 +70,7 @@
     <!-- Experience  -->
 
     <section class="s2 margintop50 position-relative container">
-        <h1 class="section-header">Experience</h1>
+        <h2 id="experience"class="section-header">Experience</h2>
         <div class="section container experience">
             <p class="experience-text padding">
                 In 2015 I graduated a technical school acquiring hotelier skills. During that time I have learnt the true value in hosting guests by taking every effort to make their stay pleasant, as well as show cordiality and warmth on each step during employee-guest interaction.
@@ -93,8 +93,8 @@
 
     <!-- Life -->
 
-    <section class="life position-relative">
-        <h1 class="section-header life-header">Life</h1>
+    <section id="life" class="life position-relative">
+        <h2 class="section-header life-header">Life</h2>
         <div class="feathers">
 
         </div>
@@ -102,7 +102,7 @@
         <!-- Reunion  -->
 
         <section class="section s3 centered position-relative container">
-            <h1 class="sub-header">Réunion</h1>
+            <h2 class="sub-header">Réunion</h2>
             <p class="reunion-text padding">
                 Réunion is a small tropical island situated on the vast waters of Indian Ocean. It happens to be an overseas department of France and also my current place of residence. If it’s the first time that you heard of this place, I definitely encourage you to flip throught the photos. It’s a marvelous region full of unexplored gems!</p>
             <img src="./img/img-reunion.jpeg">
@@ -112,7 +112,7 @@
         <!-- Travel  -->
         
         <section class="section s4 centered margintop50 position-relative">
-            <h1 class="sub-header">Travel</h1>
+            <h2 class="sub-header">Travel</h2>
             <div class="container">
                 <p class="travel-text padding">My life revolves around languages, the learning of which consequently provides a good chunk of its culture, as well as history. It simply couldn’t bring any other effect than my yearn for travel. For this very reason I decided to live abroad and devote some time to discover Southeast Asia and Oceania.</p>
                 <div class="travel-gallery">
@@ -135,26 +135,26 @@
 
     <!-- Contact  -->
 
-    <footer class="contact margintop50 position-relative container">
-        <h1 class="section-header">Let's stay in touch!</h1>
+    <footer id="contact"class="contact margintop50 position-relative container">
+        <h2 class="section-header">Let's stay in touch!</h2>
         <img src="./img/footer.jpeg">
         <div class="social-media">
-            <i class="icon-facebook"></i>
-            <i class="icon-instagram"></i>
-            <i class="icon-linkedin"></i>
-            <i class="icon-github-circled"></i>
+            <a href="#"><i class="icon-facebook"></i></a>
+            <a href="#"><i class="icon-instagram"></i></a>
+            <a href="#"><i class="icon-linkedin"></i></a>
+            <a href="#"><i class="icon-github-circled"></i></a>
         </div>
-        <div class="contact-form">
-            <form action="">
-                <!-- <label for="name">Name</label> -->
-                <input type="text" name="name" placeholder="Name" class="form-name form-template"><br>
-                <!-- <label for="email">Email</label> -->
-                <input type="email" name="email" placeholder="Email" class="form-email form-template"><br>
-                <!-- <label for="message">Message</label> -->
-                <input type="textfield" name="message" placeholder="Message" class="form-message form-template">
-                <input type="submit" value="Send" class="send-button">
-            </form>
-        </div>
+        
+        <form action="">
+            <!-- <label for="name">Name</label> -->
+            <input type="text" name="name" placeholder="Name" class="form-name form-template"><br>
+            <!-- <label for="email">Email</label> -->
+            <input type="email" name="email" placeholder="Email" class="form-email form-template"><br>
+            <!-- <label for="message">Message</label> -->
+            <input type="textfield" name="message" placeholder="Message" class="form-message form-template">
+            <input type="submit" value="Send" class="send-button">
+        </form>
+        
     </footer>
 </body>
 </html>
